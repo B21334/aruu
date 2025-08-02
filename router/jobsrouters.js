@@ -7,4 +7,6 @@ routers.post('/jobs/:adminid',postjob);
 routers.get('/jobs',getalljobs);
 routers.get('/jobs/:id',getjobbyid);
 routers.put('/jobs/:id/:adminid',updatejob);
+routers.delete('/jobs/:id/:adminid',deletejob);
+routers.post('/import/:id/:adminid',importjob);
 export default routers
