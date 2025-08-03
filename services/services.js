@@ -4,11 +4,11 @@ import Job from '../models/jobsmodel.js';
 import { generateFromGemini } from './geminiClient.js';
 
 const RAPIDAPI_URL = 'https://linkedin-job-search-api.p.rapidapi.com/active-jb-24h';
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || '';
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || '389104c42dmshd3726c17bb5c2e3p1ca1edjsn5e29dd2a7d73';
 const RAPIDAPI_HOST = 'linkedin-job-search-api.p.rapidapi.com';
 
 // Fetch jobs from RapidAPI
-export const fetchJobsFromAPI = async (titleFilter = 'data science', locationFilter = 'india') => {
+export const fetchJobsFromAPI = async (titleFilter = 'etl', locationFilter = 'india') => {
   try {
     const options = {
       method: 'GET',
